@@ -2,9 +2,7 @@ import { FC } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 250px;
-  height: 250px;
-  /* border: 1px solid #000000; */
+  width: 300px;
 `;
 
 interface CardProps {
@@ -15,7 +13,7 @@ interface CardProps {
 const Card: FC<CardProps> = ({ text, title }) => {
   return (
     <Container>
-      <h3>{title}</h3>
+      <h4>{title}</h4>
       <div>
         <p>{text}</p>
       </div>

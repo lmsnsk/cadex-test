@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Divider } from "antd";
 
 import MainPage from "./pages/MainPage";
 import Contacts from "./pages/Contacts";
@@ -13,7 +12,6 @@ const App: FC = () => {
   return (
     <>
       <Header />
-      {/* <Divider /> */}
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contacts" element={<Contacts />} />
@@ -24,4 +22,3 @@ const App: FC = () => {
 };
 
 export default App;
-

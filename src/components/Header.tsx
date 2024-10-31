@@ -1,26 +1,34 @@
 import { FC } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import ContuctUsButton from "./ContuctUsButton";
 import CompanyName from "./CompanyName";
 
 const Container = styled.header`
-  position: relative;
+  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding: 1rem;
   box-sizing: border-box;
+  background-color: #ebebeb;
+  z-index: 2;
 `;
 
-interface HeaderProps {}
+const LinkContainer = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
 
-const Header: FC<HeaderProps> = () => {
+const Header: FC = () => {
   return (
     <Container>
-      <CompanyName />
+      <LinkContainer to="/">
+        <CompanyName />
+      </LinkContainer>
       <ContuctUsButton />
     </Container>
   );

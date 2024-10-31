@@ -1,9 +1,9 @@
 import { FC } from "react";
 import styled from "styled-components";
 
-const Container = styled.section`
+const Container = styled.div`
   position: relative;
-  width: 50%;
+  width: clamp(320px, 500px, 90%);
 `;
 
 const VideoBox = styled.iframe`
@@ -12,9 +12,7 @@ const VideoBox = styled.iframe`
   border: 1px solid #000000;
 `;
 
-interface VidoeSectionProps {}
-
-const VidoeSection: FC<VidoeSectionProps> = () => {
+const VidoeSection: FC = () => {
   return (
     <Container>
       Video here!

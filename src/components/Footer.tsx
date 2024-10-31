@@ -1,21 +1,21 @@
 import { FC } from "react";
 import styled from "styled-components";
+
 import CompanyName from "./CompanyName";
 
 const Container = styled.footer`
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding: 1rem;
   box-sizing: border-box;
+  background-color: #ebebeb;
 `;
 
-interface FooterProps {}
-
-const Footer: FC<FooterProps> = () => {
+const Footer: FC = () => {
   return (
     <Container>
       <CompanyName />

@@ -11,18 +11,21 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  box-sizing: border-box;
 `;
 
 const CardBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+  margin: 2rem;
 `;
 
-interface SecondaryContentProps {}
-
-const SecondaryContent: FC<SecondaryContentProps> = () => {
+const SecondaryContent: FC = () => {
   return (
     <Container>
       <h2>Also very important title</h2>

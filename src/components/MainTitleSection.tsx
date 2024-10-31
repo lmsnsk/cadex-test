@@ -3,12 +3,10 @@ import { FC } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 50%;
+  width: clamp(320px, 500px, 100%);
 `;
 
-interface MainTitleSectionProps {}
-
-const MainTitleSection: FC<MainTitleSectionProps> = () => {
+const MainTitleSection: FC = () => {
   return (
     <Container>
       <h1>Most important title on the page</h1>
