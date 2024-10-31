@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# CAD Exchanger test task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Ссылка на сайт:
 
-Currently, two official plugins are available:
+http://193.227.240.131:8080/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Сайт развернут на облачном сервере рег.ру. Статические файлы раздает локальный сервер Nginx.
+Бэкенд, написанный на js (express), запущен в Docker-контейнере на этом же облачном сервере.
 
-## Expanding the ESLint configuration
+При написании фронтенда испольозвались следующие библиотеки:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React-router
+- Ant design
+- Styled components
+- React-lite-youtube-embed
 
-- Configure the top-level `parserOptions` property like this:
+В проекте активно использовались семантические тэги, такие как: `header`, `footer`, `main`, `section`, `h1`...`h4`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Весь повторяемый код выносился в отдельные сущности и переиспользовался по необходимости
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Сборка проекта осуществляется с помощью Vite
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Запустить проект локально
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. `npm install --global yarn`
+2. `git-clone https://github.com/lmsnsk/cadex-test.git`
+3. `cd cadex-test && yarn`
+4. `yarn dev`
