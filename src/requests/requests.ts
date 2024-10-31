@@ -6,7 +6,7 @@ export type FieldType = {
 
 export const fetchData = async (inputData: FieldType) => {
   try {
-    const response = await fetch("http://localhost:3535/api/", {
+    const response = await fetch("http://193.227.240.131:3535/api/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(inputData),
