@@ -11,9 +11,11 @@ const Container = styled.section`
   gap: 3rem;
   margin: 2rem 0;
   margin-bottom: 6rem;
-  /* background-color: #f7f7f7; */
   padding: 2rem;
   box-sizing: border-box;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  background-color: #ffffff;
 `;
 
 const LessImportantContent: FC = () => {

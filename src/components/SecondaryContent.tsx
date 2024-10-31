@@ -11,9 +11,8 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  margin: 2rem 0;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
 `;
 
@@ -21,6 +20,7 @@ const CardBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
   margin: 2rem;
 `;

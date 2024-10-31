@@ -2,7 +2,8 @@ import { FC } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 300px;
+  min-width: 250px;
+  max-width: 330px;
 `;
 
 interface CardProps {

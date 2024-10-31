@@ -2,6 +2,7 @@ import { FC } from "react";
 import styled from "styled-components";
 
 import FormComponent from "../components/FormComponent";
+import { opacity } from "../lib/helper";
 
 const Container = styled.main`
   display: flex;
@@ -10,6 +11,7 @@ const Container = styled.main`
   min-height: 50vh;
   margin: 2rem 0;
   box-sizing: border-box;
+  animation: ${opacity} 0.4s linear;
 `;
 
 const Contacts: FC = () => {

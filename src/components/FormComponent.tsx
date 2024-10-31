@@ -2,9 +2,10 @@ import { FC, useState } from "react";
 import styled from "styled-components";
 
 import type { FormProps } from "antd";
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, Spin } from "antd";
 
 import { fetchData, FieldType } from "../requests/requests";
+import { opacity } from "../lib/helper";
 
 const { TextArea } = Input;
 
@@ -29,15 +30,17 @@ const Message = styled.p`
   font-size: 3rem;
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: ${opacity} 1s linear;
 `;
 
 const formStyle = {
-  border: "1px solid #696969",
+  boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.2)",
   borderRadius: "1rem",
   padding: "2rem",
   width: 400,
   minWidth: 320,
   maxWidth: 600,
+  backgroundColor: "#ffffff",
 };
 
 const FormComponent: FC = () => {
@@ -95,7 +98,7 @@ const FormComponent: FC = () => {
             </Form.Item>
             <Form.Item>
               <Button block disabled={isLoading} color="default" variant="solid" htmlType="submit">
-                {isLoading ? "Loading..." : "Submit"}
+                {isLoading ? <Spin size="small" /> : "Submit"}
               </Button>
             </Form.Item>
           </Form>

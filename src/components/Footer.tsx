@@ -12,7 +12,8 @@ const Container = styled.footer`
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
-  background-color: #ebebeb;
+  background-color: #fafafa;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const Footer: FC = () => {

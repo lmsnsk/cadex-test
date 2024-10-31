@@ -8,7 +8,7 @@ const ContuctUsButton: FC = () => {
     <div>
       <Link to="/contacts">
         <Button color="default" variant="solid">
-          Contuct us
+          Contact us
         </Button>
       </Link>
     </div>

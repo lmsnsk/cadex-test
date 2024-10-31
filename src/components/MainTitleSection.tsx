@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: clamp(320px, 500px, 100%);
+  margin: 0 auto;
 `;
 
 const MainTitleSection: FC = () => {
