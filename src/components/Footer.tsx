@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 import CompanyName from "./CompanyName";
 
+import { flexCenter } from "../lib/helper";
+
 const Container = styled.footer`
   position: fixed;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${flexCenter}
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;

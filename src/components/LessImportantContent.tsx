@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 import ContuctUsButton from "./ContuctUsButton";
 
+import { flexCenter } from "../lib/helper";
+
 const Container = styled.section`
-  display: flex;
+  ${flexCenter}
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 3rem;
   margin: 2rem 0;
   margin-bottom: 6rem;

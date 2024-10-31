@@ -8,3 +8,9 @@ export const opacity = keyframes`
     opacity: 1;
   }
 `;
+
+export const flexCenter = `
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

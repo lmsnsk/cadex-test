@@ -6,11 +6,11 @@ import ContuctUsButton from "./ContuctUsButton";
 
 import { cards } from "../hardcoding/cards";
 
+import { flexCenter } from "../lib/helper";
+
 const Container = styled.section`
-  display: flex;
+  ${flexCenter}
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
   padding: 2rem;
   box-sizing: border-box;
