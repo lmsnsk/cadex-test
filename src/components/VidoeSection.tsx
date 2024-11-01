@@ -14,6 +14,14 @@ const VidoeSection: FC = () => {
   return (
     <Container>
       <LiteYouTubeEmbed id="dQw4w9WgXcQ" title="Video title" />
+      <iframe
+        width="100%"
+        height="290px"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="YouTube Video"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      />
     </Container>
   );
 };
