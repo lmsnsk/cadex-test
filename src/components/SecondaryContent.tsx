@@ -12,7 +12,7 @@ const Container = styled.section`
   ${flexCenter}
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
 `;
 

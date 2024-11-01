@@ -11,7 +11,7 @@ const Container = styled.section`
   gap: 3rem;
   margin: 2rem 0;
   margin-bottom: 6rem;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;

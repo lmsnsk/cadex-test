@@ -14,11 +14,11 @@ const FormContainer = styled.div`
   align-items: center;
   gap: 2rem;
   border-radius: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 `;
 
 const formStyle = {
-  width: 350,
+  width: 330,
   minWidth: 250,
   maxWidth: 600,
   padding: "2rem",

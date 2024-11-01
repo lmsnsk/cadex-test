@@ -8,7 +8,8 @@ import { flexCenter, opacity } from "../lib/helper";
 const Container = styled.main`
   ${flexCenter}
   min-height: 50vh;
-  margin: 2rem 0;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   box-sizing: border-box;
   animation: ${opacity} 0.4s linear;
   width: 100%;

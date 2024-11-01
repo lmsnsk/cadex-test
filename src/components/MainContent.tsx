@@ -9,7 +9,7 @@ const Container = styled.section`
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   margin: 1rem 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);

@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 const Content = styled.div`
   max-width: 1280px;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   margin: 0 auto;
 `;
