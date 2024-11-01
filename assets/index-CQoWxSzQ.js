@@ -320,7 +320,7 @@ PERFORMANCE OF THIS SOFTWARE.
   background-color: #ffffff;
 `,N4=()=>de.jsxs(L4,{children:[de.jsx("h3",{children:"Less important title"}),de.jsx(Pv,{})]}),k4=or.main`
   animation: ${Rv} 0.4s linear;
-`,z4=()=>de.jsxs(k4,{children:[de.jsx(O4,{}),de.jsx(Zy,{}),de.jsx(j4,{}),de.jsx(Zy,{}),de.jsx(N4,{})]}),A4=async e=>{try{const t=await fetch("http://193.227.240.131:3535/api/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(e)});if(!t.ok)throw new Error(`HTTP error! status: ${t.status}`);const r=await t.json();if(typeof r.message!="string")throw new Error("Not valid data!");return r.message}catch(t){console.log(t)}},{TextArea:D4}=ko,B4=or.div`
+`,z4=()=>de.jsxs(k4,{children:[de.jsx(O4,{}),de.jsx(Zy,{}),de.jsx(j4,{}),de.jsx(Zy,{}),de.jsx(N4,{})]}),A4=async e=>{try{const t=await fetch("https://cors-anywhere.herokuapp.com/http://193.227.240.131:3535/api/",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(e)});if(!t.ok)throw new Error(`HTTP error! status: ${t.status}`);const r=await t.json();if(typeof r.message!="string")throw new Error("Not valid data!");return r.message}catch(t){console.log(t)}},{TextArea:D4}=ko,B4=or.div`
   display: flex;
   flex-direction: column;
   align-items: center;
