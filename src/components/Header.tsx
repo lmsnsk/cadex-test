@@ -2,8 +2,8 @@ import { FC } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import ContuctUsButton from "./ContuctUsButton";
 import CompanyName from "./CompanyName";
+import ContuctUsButton from "./ContuctUsButton";
 
 const Container = styled.header`
   position: sticky;
